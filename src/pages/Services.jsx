@@ -19,7 +19,7 @@ const Services = () => {
         <div className="col-sm-12  col-md-4 ">
           <Card image={logo} />
           <br />
-          <Card image={appRoutes} />
+          <Card image={appRoutes} url={"https://juamaya.github.io/web"} title={"Pagina web"} description="WEB-AMAYA " />
           <br />
           <Card image={services} />
         </div>
@@ -35,7 +35,7 @@ const Services = () => {
         <div className="col-sm-12 col-md-4">
           <Card image={logo} />
           <br />
-          <Card image={morty }url={"https://juamaya.github.io/morty"} title={"App RICK and MORTY"} description="Pagina web que consume una API"/>
+          <Card image={morty } url={"https://juamaya.github.io/morty"} title={"App RICK and MORTY"} description="Pagina web que consume una API"/>
           <br />
           <Card image={services} />
         </div>

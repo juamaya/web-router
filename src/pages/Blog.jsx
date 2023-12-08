@@ -1,12 +1,14 @@
 import React from 'react'
 import { Link, useLoaderData } from 'react-router-dom'
 
+ 
+
 const Blog = () => {
   const { posts } = useLoaderData()
   console.log(posts)
   return (
     <div className="container   ">
- <div className='fs-1 mb-4 text-center text-primary'>  <i className="fa-solid fa-blog"></i>  Posts</div>
+ <div className='fs-1 mb-4 text-center text-dark'>  <i className="fa-solid fa-blog"></i> Lista de Posts</div>
 
  
 
@@ -14,7 +16,7 @@ const Blog = () => {
         {posts.length > 0 ? (
           posts.map((post) => (
             <li key={post.id}  >
-              <Link to={`/blog/${post.id}`} className='text-danger fs-3 mb-4' >{post.title}</Link>
+              <Link to={`/blog/${post.id}`} className='text-dark fs-3 mb-4' >{post.title}</Link>
             </li>
           ))
         ) : (

@@ -4,6 +4,8 @@ import ilustracion from '../assets/images/ilustracion.avif'
 import ilustracion1 from '../assets/images/ilustracion1.avif'
 import services from '../assets/images/services.jpg'
 import logo from '../assets/images/logo.jpg'
+import morty from '../assets/images/morty.png'
+import poke from '../assets/images/pokemon.png'
 
 const About = () => {
   return (
@@ -13,23 +15,23 @@ const About = () => {
 
 
         <div className="col-sm-12  col-md-4 ">
-          <Card image={services} />
+          <Card image={services}  url={"https://juamaya.github.io/web-slider"} title={"Pagina web"} description="     WEB SLIDER" />
           <br />
-          <Card image={ilustracion} />
+          <Card image={ilustracion}   url={"https://juamaya.github.io/curricujuan.github.io"} title={"CURRICULUM"} description="  CURRICULUM WEB"/>
      
         </div>
         <br />
         <div className="col-sm-12 col-md-4">
-          <Card image={logo} />
+          <Card image={logo} url={"https://juamaya.github.io/portafolio"} title={"Portafolio"} description="Mi Portafolio  WEB"/>
           <br />
-          <Card image={ilustracion1} />
+          <Card image={poke} url={"https://juamaya.github.io/pokemon"} title={"App Pokemon"} description="Pagina web que consume una API" />
          
         </div>
         <br />
         <div className="col-sm-12 col-md-4">
-          <Card image={services} />
+          <Card image={services}  url={"https://juamaya.github.io/menu-slider"} title={"Pagina web"} description="   MENU SLIDER" />
           <br />
-          <Card image={ilustracion} />
+          <Card image={morty} url={"https://juamaya.github.io/morty"} title={"App RICK and MORTY"} description="Pagina web que consume una API"/>
          
         </div>
 
